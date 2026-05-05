@@ -1,1 +1,0 @@
-function n(o){const r=Symbol(o);return{encode(e){return{...e,encoding_symbol:r,encoding_type:o}},decode(e){if(e.encoding_symbol!==r)throw console.log("decoder error",e,o,r),new Error("Decoder was passed encoded data from the wrong encoder");return e}}}export{n as e};
